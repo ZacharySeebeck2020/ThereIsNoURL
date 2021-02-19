@@ -11,4 +11,4 @@ function ZoomText(evt) {
 }
 
 document.querySelector('html').onwheel = ZoomText;
-document.querySelector('html').touchmove = ZoomText;
+document.querySelector('html').ontouchmove = ZoomText;
