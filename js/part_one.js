@@ -7,8 +7,8 @@ function ZoomText(evt) {
     // Restrict scale
     scale = Math.min(Math.max(.03, scale), 1);
     // Apply scale transform
-    el.style.transform = `scale(${scale})`;
+    document.querySelector('#nothingText').style.transform = `scale(${scale})`;
 }
 
-const el = document.querySelector('h3');
-el.onwheel = ZoomText;
+document.querySelector('html').onwheel = ZoomText;
+document.querySelector('html').touchmove = ZoomText;
