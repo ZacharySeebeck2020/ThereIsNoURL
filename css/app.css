@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+html {
+  font-family: "Roboto Mono", monospace;
+  background-color: #212121;
+  color: white;
+}
+
+body {
+  margin: 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0px;
+}
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.mouse {
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+.mouse-icon {
+  width: 15px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.mouse-wheel {
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 3px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+  -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
+}
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
