@@ -1,0 +1,28 @@
+.backdoor {
+  background-color: white;
+  position: relative;
+  width: 200px;
+  height: 300px;
+
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.door {
+  background-color: rgb(64, 0, 124);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 300px;
+
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 1s ease-in-out;
+}
+
+.door-open {
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px)
+    rotateY(-105deg);
+}

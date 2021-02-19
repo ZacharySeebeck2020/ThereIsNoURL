@@ -7,19 +7,30 @@
     <title>There Is No URL</title>
 
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/door.css">
 </head>
 <body>
     <div class="container text-center">
-        <h3 id="nothingText" class="center" style="font-size: 115px;">There Is Nothing</h3>
+        <div id="pt1" class="center">
+            <h3 id="nothingText" class="center" style="font-size: 115px;">There Is Nothing</h3>
+        </div>
+
+        <div id="pt2" class="d-none">
+            <div class="backdoor">
+                <div class="door">  
+                </div>
+            </div>
+        </div>
         
         <div class="mouse">
             <div class="mouse-icon">
-              <span class="mouse-wheel"></span>
+              <span id="mouseAction" class="mouse-wheel"></span>
             </div>
         </div>
     </div>
 
     <script src="js/app.js"></script>
     <script src="js/part_one.js"></script>
+    <script src="js/part_two.js"></script>
 </body>
 </html>

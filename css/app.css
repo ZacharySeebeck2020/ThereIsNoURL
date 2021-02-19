@@ -3,12 +3,16 @@ html {
   font-family: "Roboto Mono", monospace;
   background-color: #212121;
   color: white;
+  overflow: hidden;
 }
-
 body {
   margin: 0px;
 }
 
+/* Base Classes */
+.d-none {
+    display: none;
+}
 .text-center {
   text-align: center;
 }
@@ -32,6 +36,8 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+/* Scrolling Mouse On The Bottom */
 .mouse {
     width: 100px;
     position: absolute;
@@ -42,6 +48,7 @@ body {
   width: 15px;
   height: 30px;
   border: 2px solid white;
+  mix-blend-mode: difference;
   border-radius: 15px;
   cursor: pointer;
   position: relative;
@@ -53,10 +60,22 @@ body {
   display: block;
   width: 3px;
   background-color: white;
+  mix-blend-mode: difference;
   border-radius: 50%;
   -webkit-animation: 1.6s ease infinite wheel-up-down;
   -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
+}
+.mouse-click-left {
+    height: 10px;
+    display: block;
+    width: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 80% 10% 10% 10%;
+    -webkit-animation: 1.6s ease infinite mouse-left-click;
+    -moz-animation: 1.6s ease infinite mouse-left-click;
+    animation: 1.6s ease infinite mouse-left-click;
 }
 @-webkit-keyframes wheel-up-down {
   0% {
@@ -97,3 +116,37 @@ body {
     opacity: 0;
   }
 }
+@-webkit-keyframes mouse-left-click {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes mouse-left-click {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes mouse-left-click {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
